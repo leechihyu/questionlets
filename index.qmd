@@ -1,0 +1,33 @@
+---
+title: "Welcome"
+---
+
+This is a small test website built from files in a GitHub repository.
+
+## How it works
+
+You edit the `.qmd` source files, commit them with Git, and push them to GitHub. GitHub Actions then asks Quarto to build the public HTML website and deploys it to GitHub Pages.
+
+::: {.callout-tip}
+## Your publication test
+
+If you can read this message at `https://leechihyu.github.io/questionlets/`, the complete publishing pipeline is working.
+:::
+
+## A simple example
+
+Quarto supports ordinary Markdown, mathematical notation such as
+
+$$
+f(x) = x^2 + 2x + 1,
+$$
+
+as well as tables:
+
+| Component | Purpose |
+|---|---|
+| Quarto | Converts source files into a website |
+| Git | Tracks changes |
+| GitHub Actions | Builds the site after a push |
+| GitHub Pages | Hosts the generated website |
+

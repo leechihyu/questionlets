@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Questionlets"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/leechihyu/questionlets
+        aria-label: GitHub repository
+  page-footer:
+    center: "Built with Quarto and published with GitHub Pages"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+

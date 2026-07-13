@@ -1,0 +1,8 @@
+---
+title: "About"
+---
+
+This page confirms that navigation between multiple Quarto pages works.
+
+To change the site, edit `index.qmd`, `about.qmd`, or `_quarto.yml`, and then push the changes to GitHub.
+
