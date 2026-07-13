@@ -3,23 +3,67 @@ project:
   output-dir: _site
 
 website:
-  title: "Questionlets"
+  title: "Questionlets for Quantitative Methods"
+  site-url: https://leechihyu.github.io/questionlets/
+  repo-url: https://github.com/leechihyu/questionlets
+  repo-actions: [edit, issue]
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
+    background: light
     right:
       - icon: github
         href: https://github.com/leechihyu/questionlets
         aria-label: GitHub repository
+  sidebar:
+    - id: english
+      title: "Questionlets"
+      style: docked
+      background: light
+      search: true
+      contents:
+        - text: "Home"
+          href: index.qmd
+        - section: "Topics"
+          contents:
+            - text: "Descriptive statistics"
+              href: en/descriptive-statistics.qmd
+            - text: "Probability"
+              href: en/probability.qmd
+            - text: "Statistical inference"
+              href: en/inference.qmd
+            - text: "Regression"
+              href: en/regression.qmd
+        - text: "Editing guide"
+          href: editing-guide.qmd
+    - id: chinese
+      title: "小问题"
+      style: docked
+      background: light
+      search: true
+      contents:
+        - text: "首页"
+          href: zh/index.qmd
+        - section: "主题"
+          contents:
+            - text: "描述统计"
+              href: zh/descriptive-statistics.qmd
+            - text: "概率"
+              href: zh/probability.qmd
+            - text: "统计推断"
+              href: zh/inference.qmd
+            - text: "回归分析"
+              href: zh/regression.qmd
+        - text: "编辑指南"
+          href: editing-guide.qmd
   page-footer:
-    center: "Built with Quarto and published with GitHub Pages"
+    left: "Questionlets for Quantitative Methods"
+    right: "Built with Quarto"
 
 format:
   html:
     theme: cosmo
     css: styles.css
+    include-after-body: language-switch.html
     toc: true
-
+    toc-title: "Questions on this page"
+    smooth-scroll: true
+    anchor-sections: true

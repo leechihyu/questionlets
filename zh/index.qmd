@@ -1,0 +1,42 @@
+---
+title: "中文 Questionlets"
+subtitle: "小问题，深理解。"
+toc: false
+lang: zh
+sidebar: chinese
+---
+
+::: {.hero}
+通过一个个聚焦的小问题，逐步建立定量分析的直觉。请选择一个主题，先独立思考，再查看答案。
+
+[从描述统计开始](descriptive-statistics.qmd){.btn .btn-primary .btn-lg}
+:::
+
+## 前言
+
+::: {.preface}
+<!-- 请用你自己的中文前言替换下面的段落。 -->
+
+在此添加中文前言。你可以介绍 Questionlets 的目标、适合的读者，以及如何使用这些问题进行学习。
+:::
+
+## 选择主题
+
+::: {.topic-grid}
+::: {.topic-card}
+### [描述统计](descriptive-statistics.qmd)
+数据概括、分布与变异。
+:::
+::: {.topic-card}
+### [概率](probability.qmd)
+事件、条件概率与期望。
+:::
+::: {.topic-card}
+### [统计推断](inference.qmd)
+样本、不确定性与假设检验。
+:::
+::: {.topic-card}
+### [回归分析](regression.qmd)
+系数、残差与模型假设。
+:::
+:::

@@ -1,0 +1,17 @@
+---
+title: "描述统计"
+lang: zh
+sidebar: chinese
+---
+
+## 均值还是中位数？ {#mean-or-median}
+
+::: {.question-card}
+某个收入分布中存在少量极高收入。均值和中位数中，哪一个更适合表示典型收入？为什么？
+
+<details><summary>查看答案</summary>
+
+通常是**中位数**。极端高值会将均值向上拉动，而中位数仅取决于排序后的中间位置，因此对异常值不敏感。
+
+</details>
+:::

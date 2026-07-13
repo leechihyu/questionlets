@@ -1,0 +1,16 @@
+---
+title: "Probability"
+sidebar: english
+---
+
+## Independence versus mutual exclusivity {#independence}
+
+::: {.question-card}
+Can two events with positive probability be both independent and mutually exclusive?
+
+<details><summary>Reveal answer</summary>
+
+No. Mutual exclusivity gives $P(A \cap B)=0$, while independence would require $P(A \cap B)=P(A)P(B)>0$.
+
+</details>
+:::

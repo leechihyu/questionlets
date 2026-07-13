@@ -1,0 +1,49 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname;
+  const onChinesePage = path.includes("/zh/");
+  let englishTarget;
+  let chineseTarget;
+
+  if (onChinesePage) {
+    if (/\/zh\/(?:index\.html)?$/.test(path)) {
+      englishTarget = path.replace(/zh\/(?:index\.html)?$/, "");
+    } else {
+      englishTarget = path.replace("/zh/", "/en/");
+    }
+    chineseTarget = path;
+  } else if (path.includes("/en/")) {
+    englishTarget = path;
+    chineseTarget = path.replace("/en/", "/zh/");
+  } else {
+    englishTarget = path;
+    chineseTarget = path.endsWith("index.html")
+      ? path.replace(/index\.html$/, "zh/index.html")
+      : `${path.replace(/\/$/, "")}/zh/`;
+  }
+
+  const tools = document.querySelector(".quarto-navbar-tools");
+  if (!tools) return;
+
+  const group = document.createElement("div");
+  group.className = "top-language-switch";
+  group.setAttribute("aria-label", "Language selection");
+
+  const english = document.createElement("a");
+  english.className = `top-language-option${onChinesePage ? "" : " active"}`;
+  english.href = englishTarget;
+  english.textContent = "English";
+  english.lang = "en";
+  if (!onChinesePage) english.setAttribute("aria-current", "page");
+
+  const chinese = document.createElement("a");
+  chinese.className = `top-language-option${onChinesePage ? " active" : ""}`;
+  chinese.href = chineseTarget;
+  chinese.textContent = "中文";
+  chinese.lang = "zh";
+  if (onChinesePage) chinese.setAttribute("aria-current", "page");
+
+  group.append(english, chinese);
+  tools.prepend(group);
+});
+</script>

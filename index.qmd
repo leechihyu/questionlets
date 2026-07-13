@@ -1,33 +1,42 @@
 ---
-title: "Welcome"
+title: "Questionlets for Quantitative Methods"
+subtitle: "Small Questions. Deep Understanding."
+page-layout: full
+toc: false
+sidebar: english
 ---
 
-This is a small test website built from files in a GitHub repository.
+::: {.hero}
+Build quantitative intuition one focused question at a time. Choose a topic, think through the prompt, then reveal the answer when you are ready.
 
-## How it works
-
-You edit the `.qmd` source files, commit them with Git, and push them to GitHub. GitHub Actions then asks Quarto to build the public HTML website and deploys it to GitHub Pages.
-
-::: {.callout-tip}
-## Your publication test
-
-If you can read this message at `https://leechihyu.github.io/questionlets/`, the complete publishing pipeline is working.
+[Start with descriptive statistics](en/descriptive-statistics.qmd){.btn .btn-primary .btn-lg}
 :::
 
-## A simple example
+## Preface
 
-Quarto supports ordinary Markdown, mathematical notation such as
+::: {.preface}
+<!-- Replace the paragraph below with your English preface. -->
 
-$$
-f(x) = x^2 + 2x + 1,
-$$
+Add your English preface here. You can explain the purpose of Questionlets, the intended audience, and how readers should use the questions.
+:::
 
-as well as tables:
+## Explore the topics
 
-| Component | Purpose |
-|---|---|
-| Quarto | Converts source files into a website |
-| Git | Tracks changes |
-| GitHub Actions | Builds the site after a push |
-| GitHub Pages | Hosts the generated website |
-
+::: {.topic-grid}
+::: {.topic-card}
+### [Descriptive statistics](en/descriptive-statistics.qmd)
+Summaries, distributions, and variation.
+:::
+::: {.topic-card}
+### [Probability](en/probability.qmd)
+Events, conditional probability, and expectation.
+:::
+::: {.topic-card}
+### [Statistical inference](en/inference.qmd)
+Samples, uncertainty, and hypothesis tests.
+:::
+::: {.topic-card}
+### [Regression](en/regression.qmd)
+Coefficients, residuals, and assumptions.
+:::
+:::

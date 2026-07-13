@@ -1,0 +1,16 @@
+---
+title: "Regression"
+sidebar: english
+---
+
+## Interpreting a slope {#slope}
+
+::: {.question-card}
+In a simple linear regression, what does the slope coefficient represent?
+
+<details><summary>Reveal answer</summary>
+
+It is the expected change in the outcome associated with a one-unit increase in the predictor. A causal interpretation requires additional design and assumptions.
+
+</details>
+:::

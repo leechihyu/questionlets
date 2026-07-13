@@ -1,0 +1,17 @@
+---
+title: "概率"
+lang: zh
+sidebar: chinese
+---
+
+## 独立与互斥 {#independence}
+
+::: {.question-card}
+两个概率均为正的事件，能否既相互独立又互斥？
+
+<details><summary>查看答案</summary>
+
+不能。互斥意味着 $P(A \cap B)=0$，而独立则要求 $P(A \cap B)=P(A)P(B)>0$。
+
+</details>
+:::

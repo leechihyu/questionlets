@@ -1,0 +1,16 @@
+---
+title: "Statistical Inference"
+sidebar: english
+---
+
+## What is a confidence interval? {#confidence-interval}
+
+::: {.question-card}
+What does a 95% confidence interval mean in repeated sampling?
+
+<details><summary>Reveal answer</summary>
+
+If we repeatedly sampled and used the same procedure, about 95% of the resulting intervals would contain the true parameter.
+
+</details>
+:::

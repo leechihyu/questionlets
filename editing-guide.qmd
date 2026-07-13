@@ -1,0 +1,49 @@
+---
+title: "Editing Guide"
+toc: false
+sidebar: false
+---
+
+The site has parallel language folders: `en/` for English and `zh/` for Chinese. Matching filenames identify translated topic pages. For example, `en/probability.qmd` corresponds to `zh/probability.qmd`.
+
+The English preface is in `index.qmd`. The Chinese preface is in `zh/index.qmd`.
+
+## Add a question
+
+Copy this block into the relevant language and topic file. Add the translated version to the matching file when it is ready:
+
+```html
+## YOUR QUESTION TITLE {#short-unique-label}
+
+::: {.question-card}
+YOUR QUESTION TEXT
+
+<details>
+<summary>Reveal answer</summary>
+
+YOUR ANSWER
+
+</details>
+:::
+```
+
+The level-two heading automatically appears in the page's question list. You do not need to update `_quarto.yml` when adding a question to an existing topic. Using the same unique label in both languages makes corresponding questions easy to locate.
+
+## Add a topic
+
+1. Create matching files in `en/` and `zh/`.
+2. Add each file under the appropriate language section in `_quarto.yml`.
+
+## Preview and publish
+
+```bash
+quarto preview
+```
+
+After checking the result, commit and push:
+
+```bash
+git add .
+git commit -m "Add new questions"
+git push
+```

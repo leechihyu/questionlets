@@ -1,0 +1,17 @@
+---
+title: "统计推断"
+lang: zh
+sidebar: chinese
+---
+
+## 什么是置信区间？ {#confidence-interval}
+
+::: {.question-card}
+在重复抽样的意义下，95% 置信区间表示什么？
+
+<details><summary>查看答案</summary>
+
+如果不断重复抽样并使用同一种方法构造区间，那么长期来看，大约 95% 的区间会包含真实参数。
+
+</details>
+:::

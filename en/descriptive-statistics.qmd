@@ -1,0 +1,16 @@
+---
+title: "Descriptive Statistics"
+sidebar: english
+---
+
+## Mean or median? {#mean-or-median}
+
+::: {.question-card}
+An income distribution has a small number of extremely high values. Which measure better represents a typical income: the mean or the median? Why?
+
+<details><summary>Reveal answer</summary>
+
+The **median** usually represents the typical income better. Extreme values pull the mean upward, while the median is resistant to outliers.
+
+</details>
+:::

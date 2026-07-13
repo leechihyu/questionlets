@@ -1,0 +1,17 @@
+---
+title: "回归分析"
+lang: zh
+sidebar: chinese
+---
+
+## 如何解释斜率？ {#slope}
+
+::: {.question-card}
+在简单线性回归中，斜率系数代表什么？
+
+<details><summary>查看答案</summary>
+
+它表示解释变量增加一个单位时，结果变量的期望变化量。只有在研究设计和相关假设充分成立时，才能将其解释为因果效应。
+
+</details>
+:::
